@@ -1,0 +1,271 @@
+:root {
+    --navBg-color: #263238;
+    --bodyBg-color: #e0e0e0;
+    --containerBg-color: #ffffff;
+    --eventBg-color:#f5f5f5;
+    --btnEditBg-color: #F4B03E;
+	--btnDeleteBg-color: #E05C4E;
+	--btnSuccessBg-color: #28a745;
+	--failBg-color: #dc3545;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: var(--bodyBg-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--navBg-color);
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+    padding: 10px;
+}
+
+.busca h2 {
+    color: white;
+}
+
+.busca form input[type=text] {
+    margin-top: 8px;
+	font-size: 16px;
+	color: black;
+	width: 400px;
+	height: 40px;
+	padding-left: 8px;
+    border: 1 solid #fff;
+	margin-bottom: 5px;
+	border-radius: 8px;
+}
+
+.busca form input[type=submit] {
+    width: 80px;
+	height: 40px;
+	margin-bottom: 8px;
+ 	cursor: pointer;
+ 	margin-top: 10px;
+ 	background: var(--navBg-color);
+	font-size: 14px;
+	font-weight: 700;
+ 	color: white; 
+	border: 0;
+	border-radius: 8px;
+}
+
+nav a.new{
+    height: 40px;
+	display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+	color: black;
+	text-decoration: none;
+	padding: 10px 6px;
+	
+}
+
+nav a.new.event{
+	background: var(--eventBg-color);
+	border-radius: 8px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    background-color: var(--containerBg-color);
+    padding: 20px;
+	margin-top: 20px;
+	border-radius: 8px;
+
+}
+
+/*Tabela*/
+
+.wraper-table{
+	overflow-x: auto;
+}
+
+table{
+	font-weight: 300;
+	width: 100%;
+	min-width: 900px; 
+	margin: 20px 0;
+	border-collapse: collapse;
+}
+
+table tr:nth-of-type(1){
+	background: var(--navBg-color);
+	font-weight: normal;
+	color: white;
+}
+
+table tr{
+	border-bottom: 1px solid #ccc;
+}
+
+table tr{
+	color: #555;
+}
+
+table td{
+	padding: 10px;
+}
+
+
+table a.btn{
+	display: inline-block;
+	font-size: 13px;
+	color: white;
+	text-decoration: none;
+	padding: 4px 6px;
+	border-radius: 8px;
+	
+}
+
+a.btn.edit{
+	background: var(--btnEditBg-color);
+}
+
+a.btn.delete{
+	background: var(--btnDeleteBg-color);
+}
+
+
+
+/*Form*/
+
+.container h2 {
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.formGroup {
+    display: inline-block;
+    width: 600px;
+    font-size: 12px;
+    margin: 0 auto;
+}
+
+.formGroup form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    
+}
+
+.formGroup form label {
+    font-size: 18px;
+}
+
+.formGroup form input[type=text],
+.formGroup form input[type=number] {
+    margin-top: 8px;
+	font-size: 16px;
+	color: black;
+	width: 100%;
+	height: 40px;
+	padding-left: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+.formGroup form input[type=date],
+.formGroup form input[type=time] {
+    margin-top: 8px;
+	font-size: 16px;
+	color: black;
+	width: 150px;
+	height: 40px;
+	padding-left: 8px;
+    border: 1px solid #ccc;
+    margin: 10px 10px 10px 10px;
+}
+
+.formGroup form input[type="submit"] {
+	width: 80px;
+	height: 40px;
+	margin-bottom: 8px;
+ 	cursor: pointer;
+ 	margin-top: 10px;
+ 	background: var(--btnSuccessBg-color);
+ 	font-size: 14px;
+ 	color: white; 
+    border: 0;
+}
+
+/* Box alerta  */
+
+.box-alert{
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	color: white;
+}
+
+.sucesso{
+	background: var(--btnSuccessBg-color);
+	padding: 10px 0;
+}
+
+.erro{
+	background: var(--failBg-color);
+	padding: 10px 0;
+}
+
+/* Resposivo */
+@media screen and (max-width: 768px){
+	nav {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.busca form {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.busca form input[type=text] {
+		width: 100%;
+		
+	}
+
+	.formGroup {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.formGroup form {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		
+		
+	}
+
+	.dateTime {
+		display: flex;
+		flex-direction: column;
+	}
+}
