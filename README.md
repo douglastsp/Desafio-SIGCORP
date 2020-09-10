@@ -1,10 +1,11 @@
 # Desafio técnico SIGCORP
 Projeto: Sistema de gerenciamento de eventos
-• Criar uma tela para gerenciamento de eventos, devendo ter as seguintes funções:
-• Cadastrar Eventos com os campos: Tema, Local, Data, Qtd Pessoas e Lote;
-• Alterar Eventos com os campos: Tema, Local, Data, Qtd Pessoas e Lote;
-• Excluir Evento
-• Grid com a listagem dos Eventos com filtros.
+
+### Criar uma tela para gerenciamento de eventos, devendo ter as seguintes funções:
+- Cadastrar Eventos com os campos: Tema, Local, Data, Qtd Pessoas e Lote;
+- Alterar Eventos com os campos: Tema, Local, Data, Qtd Pessoas e Lote;
+- Excluir Evento
+- Grid com a listagem dos Eventos com filtros.
 
 
 ### Requisitos
